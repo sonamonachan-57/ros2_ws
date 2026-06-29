@@ -138,10 +138,3 @@ This project demonstrates:
 
 ---
 
-## 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome!
-
-If you'd like to enhance this project, feel free to fork the repository and submit a pull request.
-
----
