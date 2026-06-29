@@ -1,27 +1,28 @@
-# 🤖 ROS 2 Robot Simulation Workspace
+# 🤖 ROS2 Workspace
 
-A **ROS 2** workspace featuring a custom robot description package and a Gazebo simulation package. This project provides a complete foundation for robot modeling, visualization, and simulation, making it ideal for robotics development, testing, and future autonomous applications.
+A professional **ROS 2 Jazzy** workspace containing multiple robotics packages for robot modeling, visualization, and simulation. This repository includes the **Robo**, **Tortoisebot Description**, and **Tortoisebot Gazebo** packages, providing a complete development environment for building, testing, and simulating robots using **Gazebo Harmonic**.
 
 ---
 
 ## ✨ Features
 
--  Custom robot model using **URDF/Xacro**
--  Robot visualization in **RViz2**
--  Realistic robot simulation in **Gazebo**
--  Well-structured ROS 2 workspace
--  Easily extendable with sensors, controllers, SLAM, and Navigation2
--  Modular package architecture for future development
+*  Robot modeling using **URDF/Xacro**
+*  Robot visualization with **RViz2**
+*  Robot simulation using **Gazebo Harmonic**
+*  Modular ROS 2 package architecture
+*  Easy to extend with sensors, controllers, SLAM, and Navigation2
+*  Clean and scalable workspace organization
 
 ---
 
 ## 📂 Workspace Structure
 
 ```text
-ros2_ws/
+ROS2_Workspace/
 ├── src/
-│   ├── robot_description/
-│   └── robot_gazebo/
+│   ├── Robo/
+│   ├── tortoisebot_description/
+│   └── tortoisebot_gazebo/
 ├── build/
 ├── install/
 └── log/
@@ -31,48 +32,54 @@ ros2_ws/
 
 ## 📦 Packages
 
-### 🤖 robot_description
+### 🤖 Robo
 
-Contains all resources related to the robot model.
-
-**Includes:**
-- URDF/Xacro files
-- Robot meshes
-- RViz configuration
-- Launch files
-- Robot visualization setup
+A ROS 2 package containing the core robot-related resources and utilities used throughout the workspace.
 
 ---
 
-### 🌍 robot_gazebo
+### 📐 Tortoisebot Description
 
-Provides the simulation environment for the robot.
+Contains the robot description and visualization resources.
 
 **Includes:**
-- Gazebo world
-- Robot spawning
-- Launch files
-- Simulation configuration
+
+* URDF/Xacro files
+* Robot meshes
+* RViz2 configuration
+* Launch files
+* Robot model visualization
+
+---
+
+### 🌍 Tortoisebot Gazebo
+
+Provides the Gazebo simulation environment for the robot.
+
+**Includes:**
+
+* Gazebo Harmonic world files
+* Robot spawning
+* Simulation launch files
+* Environment configuration
 
 ---
 
 ## 🛠️ Prerequisites
 
-Before getting started, ensure the following are installed:
-
-- Ubuntu 22.04
-- ROS 2 Jazzy
-- Gazebo
-- RViz2
-- colcon
-- Python3
+* Ubuntu 24.04 LTS
+* ROS2 Jazzy Jalisco
+* Gazebo Harmonic
+* RViz2
+* colcon
+* Python3
 
 ---
 
 ## ⚙️ Build the Workspace
 
 ```bash
-cd ~/ros2_ws
+cd ~/ROS2_Workspace
 
 colcon build
 
@@ -84,7 +91,7 @@ source install/setup.bash
 ## ▶️ Visualize the Robot
 
 ```bash
-ros2 launch robot_description display.launch.py
+ros2 launch tortoisebot_description display.launch.py
 ```
 
 ---
@@ -92,49 +99,50 @@ ros2 launch robot_description display.launch.py
 ## 🎮 Launch Gazebo Simulation
 
 ```bash
-ros2 launch robot_gazebo gazebo.launch.py
+ros2 launch tortoisebot_gazebo gazebo.launch.py
 ```
 
 ---
 
-## 🚀 Future Enhancements
+## 🚀 Future Improvements
 
--  SLAM integration
--  Navigation2
--  Camera support
--  LiDAR integration
--  IMU support
--  ROS 2 Control
--  MoveIt 2
--  Autonomous navigation
--  AI-powered perception
+*  LiDAR Integration
+*  RGB & Depth Camera Support
+*  SLAM Mapping
+*  Navigation2
+*  ROS 2 Control
+*  MoveIt 2 Integration
+*  Autonomous Navigation
+*  AI-Based Perception
+*  Localization
 
 ---
 
 ## 💻 Technologies Used
 
-| Technology | Purpose |
-|------------|---------|
-|  ROS 2 Jazzy | Robotics Framework |
-|  URDF | Robot Description |
-|  Xacro | Modular Robot Modeling |
-|  Gazebo | Robot Simulation |
-|  RViz2 | Visualization |
-|  Python | Launch & Utilities |
-|  C++ | ROS Nodes |
+| Technology         | Purpose                  |
+| ------------------ | ------------------------ |
+|  ROS 2 Jazzy     | Robotics Framework       |
+|  URDF            | Robot Description        |
+|  Xacro           | Modular Robot Modeling   |
+|  Gazebo Harmonic | Robot Simulation         |
+|  RViz2          | Robot Visualization      |
+|  Python          | Launch Files & Utilities |
+|  C++             | ROS 2 Nodes              |
+|  colcon          | Workspace Build System   |
 
 ---
 
-## 📖 Learning Objectives
+## 📖 Learning Outcomes
 
 This project demonstrates:
 
-- ✅ Robot modeling using URDF/Xacro
-- ✅ ROS 2 package organization
-- ✅ Robot visualization in RViz2
-- ✅ Robot simulation in Gazebo
-- ✅ Launch file development
-- ✅ Robotics software development workflow
+* ✅ ROS 2 workspace organization
+* ✅ Robot modeling using URDF/Xacro
+* ✅ Robot visualization in RViz2
+* ✅ Gazebo Harmonic simulation
+* ✅ ROS 2 launch system
+* ✅ Robotics software development workflow
+* ✅ Modular package development
 
 ---
-
